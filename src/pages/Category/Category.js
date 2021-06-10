@@ -1,22 +1,20 @@
 import './Category.css';
 import { useContext } from 'react';
 import { AcnhContext } from '../../contexts/acnhapi';
-import Villager from '../../components/Villager/Villager';
+import Card from '../../components/Card/Card';
 
 const Category = () => {
     const { branch, apiData } = useContext(AcnhContext);
-
     return (
         <div className="Category">
             Category Page for {branch}
             {
-                branch === 'All' &&
-                    apiData.villagers.map((villager, idx) => (
-                        <Villager 
-                            villagerData={villager}
-                            key={idx}
-                        />
-                    ))
+                apiData[branch.charAt(0).toLowerCase() + branch.slice(1)].map((data, idx) => (
+                    <Card 
+                        data={data}
+                        key={idx}
+                    />
+                ))
             }
         </div>
     );

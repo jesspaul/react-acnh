@@ -18,7 +18,7 @@ const Header = () => {
                     <div className="subnav">
                         <a href="#" className="nav-link subnavbtn">Villagers <i className="fa fa-caret-down"></i></a>
                         <div className="subnav-content">
-                            <Link className="nav-link" to='/category' onClick={() => setBranch('All')}>All</Link>
+                            <Link className="nav-link" to='/category' onClick={() => setBranch('Villagers')}>All</Link>
                             <Link className="nav-link" to='/category' onClick={() => setBranch('Species')}>Species</Link>
                             <Link className="nav-link" to='/category' onClick={() => setBranch('Gender')}>Gender</Link>
                             <Link className="nav-link" to='/category' onClick={() => setBranch('Personality')}>Personality</Link>
