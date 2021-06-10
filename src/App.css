@@ -2,37 +2,35 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Sarabun:wght@200&display=swap");
+
+:root {
+  --acnh-blue: #6dbdb6;
+  --acnh-neutral: rgba(222, 239, 227, 1);
+  --acnh-neutral-tint: rgba(219, 238, 231, 1);
+  --nav-color: rgba(222, 239, 227, 0.5);
+  --title-color: rgba(107, 190, 182, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url("./img/pattern-leaves-white.jpg");
+  background-repeat: repeat;
+  background-color: var(--acnh-neutral);
+  font-family: "Sarabun", Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#body-container {
+  flex: 1 0 auto;
 }
