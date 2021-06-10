@@ -22,12 +22,13 @@ const AcnhContextProvider = (props) => {
                 }
             };
         }
-
         getAppData();
     }, []);
 
+    const [branch, setBranch] = useState();
+
     return (
-        <AcnhContext.Provider value={{apiData}}>
+        <AcnhContext.Provider value={{apiData, branch, setBranch}}>
             {props.children}
         </AcnhContext.Provider>
     )
