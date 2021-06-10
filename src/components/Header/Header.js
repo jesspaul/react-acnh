@@ -1,5 +1,6 @@
 import './Header.css';
 import logo from '../../img/acnh-logo.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -8,7 +9,7 @@ const Header = () => {
             <div className='heading-section'>
                 <div className="navbar">
                     <div className="subnav">
-                        <a className="nav-link" href="./index.html">Home</a>
+                        <Link className='nav-link' to='/'>Home</Link>
                     </div>
 
                     <div className="subnav">
