@@ -6,7 +6,8 @@ const Card = ({ data }) => {
             <div className='title'>
                 {data['icon_uri'] && <img className="icon" src={data['icon_uri']} />}
                 
-                <p className="name">{data.name['name-USen']}</p>
+                {typeof(data) === 'object' ? <p className="name">{data.name['name-USen']}</p> : <p className="name">{data}</p> }
+                
             </div>
         </div>
     );
