@@ -1,0 +1,12 @@
+.Home {
+  margin: 8rem auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home img {
+  height: 60vh;
+}
